@@ -3,7 +3,18 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
-
+const Country = (countryName) => {
+    const State = (stateName) => {
+      const basketball = 'University of Kentucky';
+      const stateBird = 'Cardinal';
+        const City = (cityName) => {
+          console.log(`I live in the ${countryName} in ${cityName}, ${stateName}. Our state Bird is ${stateBird} and the best college basketball team is ${basketball}`);
+        }
+        City('Lexington');
+    }
+    State('Kentucky');
+}
+Country('United States');
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
